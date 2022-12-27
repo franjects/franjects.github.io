@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    <meta name = "viewport" content = "width-device-width, initial-scale-1.0">
+    <title>Personal Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/64bf64f6ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li>
+                        <a href = "#">Projects <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href = "rainbarrel.html">Solar Rain Barrel</a></li>
+                            <li><a href = "tempsens.html">Temperature Sensor</a></li>
+                            <li><a href = "obstacavoidcar.html">Obstacle Avoiding Car</a></li>
+                            <li><a href = "walkrobot.html">Walking Robot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="tempsens">
+            <div class="contemp">
+                    <div class="temp-pics">
+                        <h1 class = "sub-title1">Temperature Sensor</h1>
+                        <div class="tempic">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/V29zXViMjJA" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <div class="tempic">
+                            <img src="Images/arduinovoltage.png" height = 300px width = 400px>
+                            <div class="layer1">
+                                <h4>Vout</h4>
+                                <p1>In this project, I first had to get the resistance of the<br>
+                                    thermistor using the voltage divider equation, but<br>
+                                    rearranged  to get R2, the thermistor rating. Of course I had to<br>
+                                    remember that voltage was calculated differently in the arduino, so<br>
+                                    I used the above equation to account for this.
+                                </p1>
+                            </div>
+                        </div>
+                        <div class="tempic">
+                            <img src="Images/steineq.png" height = 200px width = 500px>
+                            <div class="layer1">
+                                <h4>Steinhart-Hart Equation Calculations</h4>
+                                <p1>I then had to find the resistance ratings of the
+                                    thermistor for 3 different temperatures.<br>
+                                    To simulate drastically different temperatures, I simply used different<br>
+                                    different temperatures of water, using a thermometer to check.<br>In this case, I determined:<br><br>
+                                    T1 = 5 C, R1 = 28400 Ohms<br>
+                                    T2 = 17 C, R2 = 11400 Ohms<br>
+                                    T3 = 40 C, R3 = 10 Ohms<br><br>
+                                    After this I would have to plug these values into the equation in the above figure.<br>
+                                    I then used my calculator to get the results, which were:<br><br>
+                                    A = 3.293 * 10^-3<br>
+                                    B = -4.7 * 10^-5<br>
+                                    C = 7.2899 * 10^-7<br>
+                                </p1>
+                            </div>
+                        </div>
+                        <div class="tempic">
+                            <img src="Images/steinlast.jpg" height = 200px width = 500px>
+                            <div class="layer1">
+                                <h4>Vout<br><br></h4>
+                                <p1>And finally, I used this &#9755; <br>
+                                    equation to get the<br>final temperature reading, and then<br>
+                                    converted Celsius to Fahrenheit.
+                                </p1>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <div class="contact">
+            <div class = "copyright">
+                <p>Copyright &copy 2022 Francisco D. Sandoval. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

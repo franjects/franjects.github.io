@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    <meta name = "viewport" content = "width-device-width, initial-scale-1.0">
+    <title>Personal Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/64bf64f6ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="headerabout">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li>
+                        <a href = "#">Projects <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href = "rainbarrel.html">Solar Rain Barrel</a></li>
+                            <li><a href = "tempsens.html">Temperature Sensor</a></li>
+                            <li><a href = "obstacavoidcar.html">Obstacle Avoiding Car</a></li>
+                            <li><a href = "walkrobot.html">Walking Robot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <!--About section of code-->
+    <div id="about">
+        <div class="acontainer">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src = "Images/20221217_142308.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class = "sub-title">About me</h1>
+                    <p>I am a curious and dedicated student, who is interested in how our world works, and the technology that helps us thrive. 
+                    Renewable energy, the Electrical Grid, and programmable electronics are my passions.
+                    For the future of this website, I hope to also provide a learning platform
+                    <br> for Electrical Engineering and programming basics,as well as provide in-depth<br>
+                    tutorials for those who want to replicate my projects. My greatest ambition right now is to
+                   <br>build my own small programmable robot, and to participate in a Summer 2023<br>
+                    internship.</p>
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick = "opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick = "opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id = "Skills">
+                        <ul>
+                            <li><span>Software</span><br>Python, C, C++, AutoCAD Electrical, Matlab</li>
+                            <li><span>Hands-On</span><br>Circuit Soldering, Electrical Wiring</li>
+                            <li><span>Soft</span><br>Teamwork, Determined, Time Management</li>
+                        </ul>
+                    </div>
+    
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Rensselaer Polytechnic Institute (2020-2024)</span><br>B.S. Electrical Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class = "copyright">
+            <p>Copyright &copy 2022 Francisco D. Sandoval. </p>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    <meta name = "viewport" content = "width-device-width, initial-scale-1.0">
+    <title>Personal Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/64bf64f6ba.js" crossorigin="anonymous"></script>
+    <style>
+        #daPDF{
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li>
+                        <a href = "#">Projects <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href = "rainbarrel.html">Solar Rain Barrel</a></li>
+                            <li><a href = "tempsens.html">Temperature Sensor</a></li>
+                            <li><a href = "obstacavoidcar.html">Obstacle Avoiding Car</a></li>
+                            <li><a href = "walkrobot.html">Walking Robot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div id="rainbarrel">
+        <div class="contrain">
+                <div class="rain-pics">
+                    <h1 class = "sub-title1">Water Filtering Rain Barrel<br>
+                        with Solar LCD Display.</h1>
+                    <div class="rapic">
+                        <iframe id ="daPDF" src="Images/IED-PD1 Report Team 4.docx.pdf" frameborder="0"></iframe>
+                        <div class="layer1">
+                            <h4>Team Report for Project</h4>
+                            <p1>I completed this project during my Summer 2022 semester at RPI.<br>
+                            The class was called Introduction to Engineering Design, and<br>
+                            I was assigned a random team to create a project that would serve<br>a functional purpose to 
+                            any audience we wanted,<br>but it had to include several aspects of engineering.<br>
+                            In this report, we discuss each of our subsystems and much more.<br>You can also find our "team-building" exercises,
+                            where we took time to<br>develop not only professional but also personal<br>
+                            relationships. This is what makes working in a team fun,<br>learning about each other
+                            and each person's individual skillset.<br>
+                            Please read if you are interested.</p1>
+                        </div>
+                    </div>
+                    <div class="rapic">
+                        <img src="Images/circuitschem.jpeg" height = 400px width = 600px>
+                        <div class="layer1">
+                            <h4>Initial Circuit Schematic</h4>
+                            <p1>I worked alongside one of my group partners to <br>
+                                figure out how the wiring for the Arduino microcontroller(the brain of the circuit)<br> would interact with
+                                the necessary sensors and the breadboard. Some of the components include<br> 
+                                a pH sensor, a turbidity sensor, and load cells.<br>
+                                While the former two are easier to understand, the latter(load cells) were implemented<br>
+                                to measure pressure, and using the ideal Gas Law, we would be able to use to determine volume.<br>
+                                This would allow the circuit to let us know how full our barrel was.<br>
+                                Although not included in the schematic, the solar panels were also<br>connected
+                                to the circuit, and I wired them in series to get the most optimal voltage reading.</p1>
+                        </div>
+                    </div>
+                    <div class="rapic">
+                        <img src="Images/testheavy.jpg" height = 300px width = 600px>
+                        <div class="layer1">
+                            <h4>Wiring and testing the load cells</h4>
+                            <p1>In this picture, I am testing the load cells with a partner, and the expected output,<br>if wired properly,
+                                of the load cell E+/E- and A+/A- diagonal terminals would be around 2000 ohms.<br>As seen in the picture,
+                                we got this as our result.<br>Unfortunately, the load cells were faulty and did not give us proper results.<br>
+                                Our team is still not sure what caused them to fail, but it there have been a fault during their manufacturing.<br>
+                                The setup and code was researched and executed well. Despite this failure, we had to move on.
+                            </p1>
+                        </div>
+                    </div>
+                    <div class="rapic">
+                        <img src="Images/workinglcd.jpeg" height = 400px width = 350px>
+                        <div class="layer1">
+                            <h4>The LCD working</h4>
+                            <p1>After wiring, it was time to Code. Using libraries such as the <br>LiquidCrystal library
+                            for the LCD in the Arduino IDE,<br> and doing some math,our output was succesful.<br> Although
+                            our load cells failed, we still had<br>important data that came out well.<br>And just to add,
+                            the water filtration subsystem of our project was very<br>succesful.</p1>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class = "copyright">
+            <p>Copyright &copy 2022 Francisco D. Sandoval. </p>
+        </div>
+    </div>
+</body>
+
+</html>

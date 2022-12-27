@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE-edge">
+    <meta name = "viewport" content = "width-device-width, initial-scale-1.0">
+    <title>Personal Project Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/64bf64f6ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href = "index.html">Home</a></li>
+                    <li><a href = "about.html">About</a></li>
+                    <li>
+                        <a href = "#">Projects <i class="fa-sharp fa-solid fa-caret-down"></i></a>
+                        <ul class="dropdown">
+                            <li><a href = "rainbarrel.html">Solar Rain Barrel </a></li>
+                            <li><a href = "tempsens.html">Temperature Sensor</a></li>
+                            <li><a href = "obstacavoidcar.html">Obstacle Avoiding Car</a></li>
+                            <li><a href = "walkrobot.html">Walking Robot</a></li>
+                        </ul>
+                    </li>
+                    <li><a href = "contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Welcome!</p>
+                <h1>I'm Francisco Sandoval,<br>an Electrical Engineering student.
+                <br> I programmed this website from scratch to learn a new skill,<br>and to display my projects and their progress.
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!--PROJECTS section of code-->
+    <div id = "projects">
+        <div class = "container">
+            <h1 class = "sub-title">My Projects</h1>
+            <div class = "project-list">
+                <div class="work">
+                    <img src = "Images/IMG_20220810_164022.jpg" height = 300px width = 200px>
+                    <div class = "layer">
+                        <h3>Water Filtering Rain Barrel with<br>Solar LCD Display (2022)</h3>
+                        <p>Worked on the electrical wiring and soldering of circuit components
+                            to create a useful device with a team of other student engineers.</p>
+                        <a href = "rainbarrel.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src = "Images/20221218_220537.jpg" height = 300px width = 200px>
+                    <div class = "layer">
+                        <h3>Temperature Sensor (2022)</h3>
+                        <p>Used a thermistor and LCD display to display the temperature of the circuit's surroundings.
+                            Used voltage divider and Steinhart-Hart equations to calculate the temperature in degrees Fahrenheit.
+                        </p>
+                        <a href = "tempsens.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src = "Images/20221218_221900.jpg" height = 300px width = 200px>
+                    <div class = "layer">
+                        <h3>Obstacle Avoiding Car (2022)</h3>
+                        <p>Used the Arduino along with DC motors to program a car to run, assisted by an ultrasonic
+                            sensor to assist in avoiding obstacles and finding new paths.
+                        </p>
+                        <a href = "obstacavoidcar.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src = "Images/20221218_222718.jpg" height = 300px width = 200px>
+                    <div class = "layer">
+                        <h3>Walking Robot (Ongoing)</h3>
+                        <p>Positioned several servo motors to make the robotic structure
+                            walk forward with an Arduino. As there is room for improvements, specifically in the structure material, this 2022 project is ongoing.
+                        </p>
+                        <a href = "walkrobot.html"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href = "projects.html" class = "btn">See more</a>
+        </div>
+    </div>
+    <div class="contact">
+        <div class = "copyright">
+            <p>Copyright &copy 2022 Francisco D. Sandoval. </p>
+        </div>
+    </div>
+</body>
+</html>
